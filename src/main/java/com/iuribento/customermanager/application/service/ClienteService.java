@@ -1,4 +1,4 @@
-package com.iuribento.customermanager.application;
+package com.iuribento.customermanager.application.service;
 
 import com.iuribento.customermanager.application.exceptions.NotFoundException;
 import com.iuribento.customermanager.core.domain.Cliente;

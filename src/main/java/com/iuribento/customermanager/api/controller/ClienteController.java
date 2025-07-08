@@ -2,7 +2,7 @@ package com.iuribento.customermanager.api.controller;
 
 import com.iuribento.customermanager.api.dto.request.ClienteRequest;
 import com.iuribento.customermanager.api.dto.response.ClienteResponse;
-import com.iuribento.customermanager.application.ClienteService;
+import com.iuribento.customermanager.application.service.ClienteService;
 import com.iuribento.customermanager.core.domain.Cliente;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
