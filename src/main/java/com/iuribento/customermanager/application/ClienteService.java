@@ -1,5 +1,6 @@
 package com.iuribento.customermanager.application;
 
+import com.iuribento.customermanager.application.exceptions.NotFoundException;
 import com.iuribento.customermanager.core.domain.Cliente;
 import com.iuribento.customermanager.core.repository.ClienteRepository;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +21,7 @@ public class ClienteService {
 
     public Cliente buscarClientePorId(UUID id){
         return clienteRepository.findById(id).orElseThrow(
-                ()-> new RuntimeException("Cliente não encontrado")
+                ()-> new NotFoundException("Cliente não encontrado")
         );
     }
 
